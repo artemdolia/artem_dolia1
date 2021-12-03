@@ -2,39 +2,28 @@ using NUnit.Framework;
 using OpenQA.Selenium;
 using System;
 using OpenQA.Selenium.Chrome;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace HomePage1Tests
 {
     public class Tests
     {
-        private IWebDriver driver;
-        private readonly By _bestSeller = By.XPath("//a[@class='blockbestsellers']");
-        private readonly By _activeButton = By.XPath("//li[@class='active']/a[text()='Best Sellers']");
+        private IWebDriver? driver;
+        private readonly By _bestSeller = By.XPath("//*[@id='home-page-tabs']/li[2]/a");
+        private readonly By _activeButton = By.XPath("//li[@class='active']/a[@class ['blockbestsellers']]");
         private readonly By _searchName = By.XPath("//input[@name='search_query']");
         private readonly By _shirtResult = By.XPath("//span[@class='lighter']");
         private readonly By _tabsList = By.XPath("//*[@id='block_top_menu']/ul");
-       // private readonly By _tabOfPage = By.XPath("/html/head/title");
-       // private readonly By _tabOfPage1 = By.CssSelector("#block_top_menu > ul > li:nth-child(1)");
-      //  private readonly By _tabOfPage2 = By.CssSelector("#block_top_menu > ul > li:nth-child(2)");
-       // private readonly By _tabOfPage3 = By.CssSelector("#block_top_menu > ul > li:nth-child(3)");
-        
 
 
         private const string _expectedButton = "BEST SELLERS";
         private const string _expectedResult = "SHIRT";
-        private const string _nameOfArea = "Search";
-        private const string _emptystring = "<string.Empty>";
-
-
+        private const string _nameOfAttribute = "search_query";
 
         [SetUp]
         public void Setup()
         {
             driver = new ChromeDriver();
-            driver.Navigate().GoToUrl(@"http://automationpractice.com/");
-
+            driver.Navigate().GoToUrl(@"http://automationpractice.com/index.php");
         }
 
         [Test]
@@ -44,63 +33,50 @@ namespace HomePage1Tests
             bestSel.Click();
             var activeButton = driver.FindElement(_activeButton).Text;
 
-            Assert.AreEqual(_expectedButton, activeButton, "button is not found");
-
+            Assert.AreEqual(_expectedButton, activeButton, "button is not clickable");
         }
 
-
         [Test]
-        public void EnterTheText()
+        public void FindTheItemOnThePage()
         {
             var search = driver.FindElement(_searchName);
             search.SendKeys(_expectedResult);
             search.SendKeys(Keys.Enter);
             var result = driver.FindElement(_shirtResult).Text;
 
-            Assert.AreEqual(_expectedResult, result.Trim('"'), "");
+            Assert.AreEqual(_expectedResult, result.Trim('"'), "The item 'shirt 'is not found");
         }
 
         [Test]
         public void SelectTabs()
         {
+            string mainTab = $"WOMEN DRESSES T-SHIRTS";
+
             var tabs = driver.FindElement(_tabsList).Text;
             tabs = tabs.Replace("\r\n", " ");
-            string mainTab = $"WOMEN\r\nDRESSES\r\nT-SHIRTS";
             mainTab = mainTab.Replace("\r\n", " ");
 
             Console.WriteLine($"{mainTab}");
 
-          Assert.AreEqual(tabs, mainTab, "");
-
-            //var tabs = driver.FindElements(_tabsList);
-
-            //foreach (var tab in tabs)
-
-            //{
-                
-            //    Console.WriteLine($"{tab.Text}");
-            //}
-
-    
+            Assert.AreEqual(mainTab, tabs, $"The element 'tab' is not found");
         }
+
         [Test]
         public void GetVallueOfVallueSearch()
         {
             var searchArea = driver.FindElement(_searchName).GetAttribute("name");
             Console.WriteLine($"{searchArea}");
 
-            Assert.AreEqual(searchArea, "search_query");
-
+            Assert.AreEqual(_nameOfAttribute, searchArea, "The vallue of attribute is not found");
         }
+
         [Test]
         public void TitleOfThePage()
-       {
+        {
             string title = driver.Title;
 
             Console.WriteLine($"{title}");
-
         }
-
         [TearDown]
         public void TearDown()
         {
