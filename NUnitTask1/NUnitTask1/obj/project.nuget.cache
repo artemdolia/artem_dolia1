@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "GoW30tgProGxJZpu8M3INLRBY9zlSYDJjkr6+rTsvrc4XL2vZ9OrPjHOVdgLdlgTSquUKRDgiE9D5aThZUStNQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\a.dolia\\source\\repos\\NUnitTask1\\NUnitTask1\\NUnitTask1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\a.dolia\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\a.dolia\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
+    "C:\\Users\\a.dolia\\.nuget\\packages\\nunit\\3.13.2\\nunit.3.13.2.nupkg.sha512"
+  ],
+  "logs": []
+}
