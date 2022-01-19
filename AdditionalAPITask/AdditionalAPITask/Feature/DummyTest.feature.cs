@@ -105,7 +105,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("the user sends GET request for all employees", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 9
- testRunner.Then("appeared response with successful status", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("appeared response with \'success\' status", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -142,7 +142,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("the user sends GET request for single employee by id", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 13
- testRunner.Then("appeared response with successful status", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("appeared response with \'success\' status", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -179,7 +179,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("the user sends Post request for single employee", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 17
- testRunner.Then("appeared response with successful status", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("appeared response with \'success\' status", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 18
  testRunner.And("id in data is not null", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -219,10 +219,10 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("the user sends DELETE request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 22
- testRunner.Then("appeared response with successful message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("appeared response with \'Successfully! Record has been deleted\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 23
- testRunner.And("appeared DELETE response with successful status", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("appeared response with \'success\' status", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -259,7 +259,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("the user sends PUT request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 27
- testRunner.Then("appeared response with successful status 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("appeared response with \'success\' status", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 28
  testRunner.And("the employee_name has been changed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -269,12 +269,12 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("6 Delete not exist employee")]
-        public virtual void _6DeleteNotExistEmployee()
+        [NUnit.Framework.DescriptionAttribute("6 Get not exist employee")]
+        public virtual void _6GetNotExistEmployee()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("6 Delete not exist employee", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("6 Get not exist employee", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 30
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -296,7 +296,7 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 31
- testRunner.When("the user sends Delete request with non exist id", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("the user sends Get request with non exist id", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 32
  testRunner.Then("appeared response with empty data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");

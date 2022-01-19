@@ -110,4 +110,3 @@ C:\Users\a.dolia\source\repos\AdditionalAPITask\AdditionalAPITask\obj\Debug\net5
 C:\Users\a.dolia\source\repos\AdditionalAPITask\AdditionalAPITask\obj\Debug\net5.0\ref\AdditionalAPITask.dll
 C:\Users\a.dolia\source\repos\AdditionalAPITask\AdditionalAPITask\obj\Debug\net5.0\AdditionalAPITask.pdb
 C:\Users\a.dolia\source\repos\AdditionalAPITask\AdditionalAPITask\obj\Debug\net5.0\AdditionalAPITask.genruntimeconfig.cache
-C:\Users\a.dolia\source\repos\AdditionalAPITask\AdditionalAPITask\obj\Debug\net5.0\AdditionalAPITask.csproj.AssemblyReference.cache
