@@ -1,0 +1,16 @@
+C:\Users\a.dolia\source\repos\ProgramTasks\ProgramTasks\bin\Debug\net5.0\ProgramTasks.exe
+C:\Users\a.dolia\source\repos\ProgramTasks\ProgramTasks\bin\Debug\net5.0\ProgramTasks.deps.json
+C:\Users\a.dolia\source\repos\ProgramTasks\ProgramTasks\bin\Debug\net5.0\ProgramTasks.runtimeconfig.json
+C:\Users\a.dolia\source\repos\ProgramTasks\ProgramTasks\bin\Debug\net5.0\ProgramTasks.runtimeconfig.dev.json
+C:\Users\a.dolia\source\repos\ProgramTasks\ProgramTasks\bin\Debug\net5.0\ProgramTasks.dll
+C:\Users\a.dolia\source\repos\ProgramTasks\ProgramTasks\bin\Debug\net5.0\ref\ProgramTasks.dll
+C:\Users\a.dolia\source\repos\ProgramTasks\ProgramTasks\bin\Debug\net5.0\ProgramTasks.pdb
+C:\Users\a.dolia\source\repos\ProgramTasks\ProgramTasks\obj\Debug\net5.0\ProgramTasks.csproj.AssemblyReference.cache
+C:\Users\a.dolia\source\repos\ProgramTasks\ProgramTasks\obj\Debug\net5.0\ProgramTasks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\a.dolia\source\repos\ProgramTasks\ProgramTasks\obj\Debug\net5.0\ProgramTasks.AssemblyInfoInputs.cache
+C:\Users\a.dolia\source\repos\ProgramTasks\ProgramTasks\obj\Debug\net5.0\ProgramTasks.AssemblyInfo.cs
+C:\Users\a.dolia\source\repos\ProgramTasks\ProgramTasks\obj\Debug\net5.0\ProgramTasks.csproj.CoreCompileInputs.cache
+C:\Users\a.dolia\source\repos\ProgramTasks\ProgramTasks\obj\Debug\net5.0\ProgramTasks.dll
+C:\Users\a.dolia\source\repos\ProgramTasks\ProgramTasks\obj\Debug\net5.0\ref\ProgramTasks.dll
+C:\Users\a.dolia\source\repos\ProgramTasks\ProgramTasks\obj\Debug\net5.0\ProgramTasks.pdb
+C:\Users\a.dolia\source\repos\ProgramTasks\ProgramTasks\obj\Debug\net5.0\ProgramTasks.genruntimeconfig.cache
